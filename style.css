@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: bios;
+    src: url(fonts/Perfect\ DOS\ VGA\ 437.ttf);
+  }
+  
+  * {
+    font-family: bios;
+  }
+
+/* Reusable */
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+.full {
+    width: 100%;
+}
+
+body {
+    background-color: #000000;
+    margin: 0px;
+}
+
+:root {
+    --greenL: #39B54A;
+    --greenD: #056839;
+    --greyL: #999999;
+    --greyM: #373737;
+    --greyD: #212121;
+    --white: #ffffff;
+}
+
+.greenL {
+    color: var(--greenL);
+}
+.greenD {
+    color: var(--greenD);
+}
+.greyL {
+    color: var(--greyL);
+}
+.greyM {
+    color: var(--greyM);
+}
+.greyD {
+    color: var(--greyD);
+}
+.white {
+    color: var(--white);
+}
+
+#nav {
+    flex-direction: row;
+}
+/*  */
+
+/* Index */
+.dropdown {
+    background-color: var(--greenL);
+}
+.dropbtn {
+    background-color: var(--greenL);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--greenD);
+    min-width: 160px;
+    z-index: 1;
+  }
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .show {display:block;}
