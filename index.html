@@ -9,14 +9,36 @@
     <title>Finn Poduska</title>
 </head>
 <body>
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("dropdownCont").classList.toggle("show");
+          }
+          
+          // Close the dropdown menu if the user clicks outside of it
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdownContent");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+        </script>
     <nav id="nav" class="flex full dash">
         <h2 class="greenL">~:/</h2>
         <div class="dropdown greenl">
             <button onclick="myFunction()" class="dropbtn">destination</button>
             <div id="dropdownCont" class="dropdownContent">
-              <a href="#" class="white">Link 1</a>
-              <a href="#" class="white">Link 2</a>
-              <a href="#" class="white">Link 3</a>
+              <a href="aboutMe.html" class="white">About-Me</a>
+              <a href="contact.html" class="white">Contact</a>
+              <a href="portfolio.html" class="white">Portfolio</a>
+              <a href="resume.html" class="white">Resume</a>
             </div>
           </div>
           <h1 class="greenL">C:Finn/Portfolio/Home</h1>
@@ -25,14 +47,14 @@
         <section id="fallingTextCont" class="flex middle full">
             <h3 id="writeName" class="greenL">My name is Finn Poduska</h3>
         </section>
-        <section id="welcome" class="paragraph full greenL">
+        <section id="welcome" class="paragraph greenL">
             Welcome to my web portfolio. I'm a <p id="welcomeTypeOut" class="greenL"></p>
         </section>
-        <section id="overview" class="paragraph full greenL">
+        <section id="overview" class="paragraph greenL">
             Throughout this site, you will find my academics, contacts, projects, resume, and more. Thank you for taking the time to learn more about me!
         </section>
     </section>
-    <footer class="full">
+    <footer class="full flex">
         <!-- Add icons -->
         <div id="linkedin"><h4 class="greyL">Finn Poduska</h4></div>
         <div id="github"><h4 class="greyL">@ImThatOneGuyInTheCorner</h4></div>

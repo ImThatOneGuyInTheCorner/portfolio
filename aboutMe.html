@@ -9,43 +9,65 @@
     <title>Finn Poduska</title>
 </head>
 <body>
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("dropdownCont").classList.toggle("show");
+          }
+          
+          // Close the dropdown menu if the user clicks outside of it
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdownContent");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+        </script>
     <nav id="nav" class="flex full dash">
-        <h2>~:/</h2>
-        <div class="dropdown">
+        <h2 class="greenL">~:/</h2>
+        <div class="dropdown greenl">
             <button onclick="myFunction()" class="dropbtn">destination</button>
             <div id="dropdownCont" class="dropdownContent">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+              <a href="index.html" class="white">Home</a>
+              <a href="contact.html" class="white">Contact</a>
+              <a href="portfolio.html" class="white">Portfolio</a>
+              <a href="resume.html" class="white">Resume</a>
             </div>
           </div>
-          <h1>C:Finn/Portfolio/About-Me</h1>
+          <h1 class="greenL">C:Finn/Portfolio/About-Me</h1>
     </nav>
     <section id="main" class="full flex">
-        <h2 class="quote">'What seems to us as bitter trials are often blessings in disguise.' — Oscar Wilde</h2>
+        <h2 class="quote greenL">'What seems to us as bitter trials are often blessings in disguise.' -- Oscar Wilde</h2>
         <section id="awards" class="full flex">
-            <p>>Awards and Achievements</p>
-            <p>>I've excelled through my educational career, achieving certificates of achievement such as Principals Honor Roll and Block C all throughout my schooling. </p>
+            <p class="greenL">>Awards and Achievements</p>
+            <p class="greenL">>I've excelled through my educational career, achieving certificates of achievement such as Principals Honor Roll and Block C all throughout my schooling. </p>
             <figure class="image dash"></figure>
         </section>
         <div class="full div"></div>
         <section id="hobbies" class="full flex">
             <figure class="image dash"></figure>
-            <p>>Hobbies</p>
-            <p>>My free time often consists of playing video games, drawing pixel art, making food, or rock climbing with my brothers.</p>
+            <p class="greenL">>Hobbies</p>
+            <p class="greenL">>My free time often consists of playing video games, drawing pixel art, making food, or rock climbing with my brothers.</p>
         </section>
         <div class="full div"></div>
         <section id="plan" class="full flex">
-            <p>>Post-Secondary plan</p>
-            <p>>After High School I will take 2 years to myself for religion. Then I plan on trying to find an internship and apply to colleges in my home state, California. I want to work in the tech field, so I will pursue computer science or software engineering for my major.</p>
+            <p class="greenL">>Post-Secondary plan</p>
+            <p class="greenL">>After High School I will take 2 years to myself for religion. Then I plan on trying to find an internship and apply to colleges in my home state, California. I want to work in the tech field, so I will pursue computer science or software engineering for my major.</p>
             <figure class="image dash"></figure>
         </section>
     </section>
-    <footer class="full">
+    <footer class="full flex">
         <!-- Add icons -->
-        <div id="linkedin"><h4>Finn Poduska</h4></div>
-        <div id="github"><h4>@ImThatOneGuyInTheCorner</h4></div>
-        <div id="websiteCreation"><h4>Apr - 2024</h4></div>
+        <div id="linkedin"><h4 class="greyL">Finn Poduska</h4></div>
+        <div id="github"><h4 class="greyL">@ImThatOneGuyInTheCorner</h4></div>
+        <div id="websiteCreation"><h4 class="greyL">Apr - 2024</h4></div>
     </footer>
 </body>
 </html>

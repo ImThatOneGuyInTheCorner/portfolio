@@ -9,39 +9,61 @@
     <title>Finn Poduska</title>
 </head>
 <body>
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("dropdownCont").classList.toggle("show");
+          }
+          
+          // Close the dropdown menu if the user clicks outside of it
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdownContent");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+        </script>
     <nav id="nav" class="flex full dash">
-        <h2>~:/</h2>
-        <div class="dropdown">
+        <h2 class="greenL">~:/</h2>
+        <div class="dropdown greenl">
             <button onclick="myFunction()" class="dropbtn">destination</button>
             <div id="dropdownCont" class="dropdownContent">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+              <a href="index.html" class="white">Home</a>
+              <a href="aboutMe.html" class="white">About-Me</a>
+              <a href="portfolio.html" class="white">Portfolio</a>
+              <a href="resume.html" class="white">Resume</a>
             </div>
           </div>
-          <h1>C:Finn/Portfolio/Contact</h1>
+          <h1 class="greenL">C:Finn/Portfolio/Contact</h1>
     </nav>
-    <section id="main" class="full flex">
-        <p id="thank">>Thank you for taking the time to look through my portfolio! If something here resonates with you or you want to send me an email, feel free to do so at finnpoduska@gmail.com, or go down to the next section.</p>
-        <p id="job">>Job opportunities im interested in include Web Design and Development, Data Entry, Cybersecurity, and Video Game Design. But I am open to more tech opportunities as well, so reach out!</p>
-        <p id="socials">>Professional Social links:
-            -LinkedIn-   Finn Poduska
-            -Github-      @ImThatOneGuyInTheCorner</p>
+    <section id="main" class="contactMain full flex">
+        <p id="thank" class="greenL">>Thank you for taking the time to look through my portfolio! If something here resonates with you or you want to send me an email, feel free to do so at finnpoduska@gmail.com, or go down to the next section.</p>
+        <p id="job" class="greenL">>Job opportunities im interested in include Web Design and Development, Data Entry, Cybersecurity, and Video Game Design. But I am open to more tech opportunities as well, so reach out!</p>
+        <p id="socials" class="greenL">>Professional Social links:</p>
+        <p id="Github" class="greenL">-Github-      @ImThatOneGuyInTheCorner</p>
+        <p id="LinkedIn" class="greenL">-LinkedIn-    Finn Poduska</p>
     </section>
-    <section id="reachCont full flex">
+    <section id="reachCont" class="full flex">
         <section id="010" class="010anim"></section>
         <div class="full div"></div>
-        <h3 id="reach">Want to reach me?</h3>
+        <h3 id="reach" class="greenL">Want to reach me?</h3>
         <!-- Link email -->
-        <section id="emailCont">Send me an email at <a href="mailto:finnpoduska@gmail.com" class="link">finnpoduska@gmail.com</a>!</section>
+        <section id="emailCont" class="greenL">Send me an email at <a href="mailto:finnpoduska@gmail.com" class="link">finnpoduska@gmail.com</a>!</section>
         <div class="full div"></div>
         <section id="010rev" class="010anim"></section>
     </section>
-    <footer class="full">
+    <footer class="full flex">
         <!-- Add icons -->
-        <div id="linkedin"><h4>Finn Poduska</h4></div>
-        <div id="github"><h4>@ImThatOneGuyInTheCorner</h4></div>
-        <div id="websiteCreation"><h4>Apr - 2024</h4></div>
+        <div id="linkedin"><h4 class="greyL">Finn Poduska</h4></div>
+        <div id="github"><h4 class="greyL">@ImThatOneGuyInTheCorner</h4></div>
+        <div id="websiteCreation"><h4 class="greyL">Apr - 2024</h4></div>
     </footer>
 </body>
 </html>
