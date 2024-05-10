@@ -156,6 +156,10 @@ footer > div {
     height: 11vw;
     width: 70dvw;
 }
+#awards > .image, #hobbies > .image, #plan > .image {
+    margin-left: 0px;
+    margin-right: 0px;
+}
 #awards > figure, #hobbies > figure, #plan > figure {
     height: 10dvw;
     width: 10dvw;
@@ -195,6 +199,7 @@ footer > div {
 }
 #reach {
     font-size: 24px;
+    margin: 0dvh;
 }
 #emailCont {
     color: var(--white);
@@ -203,7 +208,6 @@ footer > div {
 #emailCont > a {
     color: var(--greenL);
 }
-
 #emailCont > a:hover {
     color: var(--greenD);
 }
