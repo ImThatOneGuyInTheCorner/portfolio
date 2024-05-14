@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <script src=""></script>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <title>Finn Poduska</title>
@@ -13,39 +13,39 @@
         /* When the user clicks on the button,
         toggle between hiding and showing the dropdown content */
         function myFunction() {
-            document.getElementById("dropdownCont").classList.toggle("show");
-          }
-          
-          // Close the dropdown menu if the user clicks outside of it
-          window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-              var dropdowns = document.getElementsByClassName("dropdownContent");
-              var i;
-              for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                  openDropdown.classList.remove('show');
-                }
+          document.getElementById("dropdownCont").classList.toggle("show");
+        }
+        
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdownContent");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
               }
             }
           }
-        </script>
-    <nav id="nav" class="flex full dash">
-        <h2 class="greenL">~:/</h2>
-        <div class="dropdown greenl">
-            <button onclick="myFunction()" class="dropbtn">destination</button>
-            <div id="dropdownCont" class="dropdownContent">
-                <a href="index.html" class="white">Home</a>
-                <a href="aboutMe.html" class="white">About-Me</a>
-                <a href="contact.html" class="white">Contact</a>
-                <a href="portfolio.html" class="white">Portfolio</a>
-                <a href="resume.html" class="white">Resume</a>
+        }
+      </script>
+      <nav id="nav" class="flex full dash">
+          <h2 class="greenL">~:/</h2>
+          <div class="dropdown greenL">
+              <button onclick="myFunction()" class="dropbtn">destination</button>
+              <div id="dropdownCont" class="dropdownContent">
+                  <a href="../index.html" class="white">Home</a>
+                  <a href="../aboutMe.html" class="white">About-Me</a>
+                  <a href="../contact.html" class="white">Contact</a>
+                  <a href="../portfolio.html" class="white">Portfolio</a>
+                  <a href="../resume.html" class="white">Resume</a>
+              </div>
             </div>
-          </div>
-          <h1 class="greenL">C:Finn/Portfolio/Home</h1>
-    </nav>
+            <h1 class="greenL">C:Finn/Portfolio/Web-Design</h1>
+      </nav>
     <section id="main" class="full flex">
-        <h2 class="green typeOut"> Web Application Development</h2>
+        <h2 class="greenL typeOut"> Web Application Development</h2>
         <!-- Titan's Legacy -->
         <section class="full backg flex">
             <p>>Titan's Legacy</p>

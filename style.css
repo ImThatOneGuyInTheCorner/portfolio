@@ -22,6 +22,11 @@
 body {
     background-color: #000000;
     margin: 0px;
+    overflow-x: hidden;
+    display: grid;
+    flex-direction: column;
+    min-height: 100dvh;
+    max-height: 200dvh;
 }
 .dash {
     border-radius: 4px;
@@ -103,12 +108,15 @@ body {
     align-items: center;
 }
 footer {
-    position: absolute;
-    bottom: 0vh;
+    /* position: absolute; */
+    display: flex;
     background-color: var(--greyD);
     height: 10vh;
     flex-wrap: wrap;
     justify-content: end;
+    /* justify-self: end; */
+    align-self: flex-end;
+    margin-top: 10dvh;
 }
 footer > div {
     height: 5vh;
@@ -128,6 +136,20 @@ footer > div {
 }
 .link:hover {
     color: var(--white);
+}
+
+p, a {
+    color: var(--greenL);
+    font-size: 28px;
+}
+.hidden {
+    display: none;
+}
+.main {
+    min-height: 100dvh;
+}
+.backg {
+    width: 60dvw;
 }
 /*  */
 
@@ -210,4 +232,56 @@ footer > div {
 }
 #emailCont > a:hover {
     color: var(--greenD);
+}
+
+
+/* portfolio */
+.window {
+    flex-direction: row;
+    background-color: #373737;
+    justify-content: center;
+}
+.window > figure {
+    width: 15dvw;
+    height: 15dvw;
+}
+.window > p {
+    width: 40dvw;
+    padding-left: 3dvw;
+}
+#tabCont {
+    flex-direction: row;
+    margin-top: 10dvh;
+    margin-left: 5dvw;
+}
+.tab {
+    background-color: var(--greyD);
+    padding: 10px 20px 10px 20px;
+    margin: 0px 0px 0px 10px;
+    cursor: pointer;
+    border-radius: 10px 10px 0px 0px;
+}
+.tab > p {
+    color: var(--white);
+    margin: 0px
+}
+.selected {
+    background-color: var(--greyM);
+}
+
+/* resume */
+.px {
+    font-size: 28px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2dvw;
+}
+.px > a {
+    padding: 0px 8px ;
+}
+#resume {
+    margin-top: 5dvw;
+    width: 600px;
+    height: 800px;
 }

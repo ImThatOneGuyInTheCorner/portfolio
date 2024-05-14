@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src=""></script>
+    <script src="js/portfolio.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <title>Finn Poduska</title>
 </head>
@@ -43,41 +43,35 @@
           </div>
           <h1 class="greenL">C:Finn/Portfolio/Portfolio</h1>
     </nav>
-    <section id="main" class="full flex">
-        <section class="tab" id="webAndProgrammingTab"><p>Web and Programming</p></section>
+    <section id="main" class="portfolioPage full flex">
+      <div id="tabCont" class="full flex">
+        <section class="tab selected" id="webAndProgrammingTab"><p>Web and Programming</p></section>
         <section class="tab" id="videogameDesignTab"><p>Videogame Design</p></section>
         <section class="tab" id="cookingAndBakingTab"><p>Cooking and Baking</p></section>
         <section class="tab" id="pixelArtTab"><p>Pixel Art</p></section>
-        <section class="full window flex" id="webAndProgrammingWindow">
-            <!-- Fill in content -->
-            <p>I've grown a lot in my web development skills and it shows through my work and projects. You can view some of my work by clicking on this button.</p>
-            <a href="projects/web.html"><section class="button pointer" id="webButton">View some of my projects!</section></a>
-            <figure class="dash"></figure>
-        </section>
-        <section class="full window flex" id="videogameDesignWindow">
-            <!-- Fill in content -->
-            <p>The design and development of video games has been a hobby of mine for years. Learn a bit more about how this passion has grown through time in this page.</p>
-            <a href="projects/game.html"><section class="button pointer" id="gameButton">View some of my projects!</section></a>
-            <figure class="dash"></figure>
-        </section>
-        <section class="full window flex" id="cookingAndBakingWindow">
-            <!-- Fill in content -->
-            <p>My mom and dad are very good at making food and baking treats, so I've been helping in the kitchen for as long as I remember. Visit this button to see why I love to cook and bake respectively.</p>
-            <a href="projects/cook.html"><section class="button pointer" id="cookButton">View some of my projects!</section></a>
-            <figure class="dash"></figure>
-        </section>
-        <section class="full window flex" id="pixelArtWindow">
-            <!-- Fill in content -->
-            <p>I have tremors, which can make drawing the traditional way difficult. But that hasn't stopped me from showing my creativity through various art forms, including pixel art. View some of my art and learn about my process through here.</p>
-            <a href="projects/pixel.html"><section class="button pointer" id="pixelButton">View some of my projects!</section></a>
-            <figure class="dash"></figure>
-        </section>
-    </section>
-    <footer class="full flex">
-        <!-- Add icons -->
-        <div id="linkedin"><h4 class="greyL">Finn Poduska</h4></div>
-        <div id="github"><h4 class="greyL">@ImThatOneGuyInTheCorner</h4></div>
-        <div id="websiteCreation"><h4 class="greyL">Apr - 2024</h4></div>
-    </footer>
+      </div>
+      <section class="full window flex" id="webAndProgrammingWindow">
+          <p class="white">I've grown a lot in my web development skills and it shows through my work and projects. You can view some of my work by clicking on this button. <a href="projects/web.html" class="button pointer link" id="webButton">>View some of my projects!</a></p>
+          <figure class="dash"></figure>
+      </section>
+      <section class="full window flex hidden" id="videogameDesignWindow">
+          <p class="white">The design and development of video games has been a hobby of mine for years. Learn a bit more about how this passion has grown through time in this page. <a href="projects/game.html" class="button pointer link" id="gameButton">>View some of my projects!</a></p>
+          <figure class="dash"></figure>
+      </section>
+      <section class="full window flex hidden" id="cookingAndBakingWindow">
+          <p class="white">My mom and dad are very good at making food and baking treats, so I've been helping in the kitchen for as long as I remember. Visit this button to see why I love to cook and bake respectively. <a href="projects/cook.html" class="button pointer link" id="cookButton">>View some of my projects!</a></p>  
+          <figure class="dash"></figure>
+      </section>
+      <section class="full window flex hidden" id="pixelArtWindow">
+          <p class="white">I have tremors, which can make drawing the traditional way difficult. But that hasn't stopped me from showing my creativity through various art forms, including pixel art. View some of my art and learn about my process through here. <a href="projects/pixel.html" class="button pointer link" id="pixelButton">>View some of my projects!</a></p>
+          <figure class="dash"></figure>
+      </section>
+  </section>
+  <footer class="full flex">
+      <!-- Add icons -->
+      <div id="linkedin"><h4 class="greyL">Finn Poduska</h4></div>
+      <div id="github"><h4 class="greyL">@ImThatOneGuyInTheCorner</h4></div>
+      <div id="websiteCreation"><h4 class="greyL">Apr - 2024</h4></div>
+  </footer>
 </body>
 </html>
