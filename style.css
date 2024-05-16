@@ -41,6 +41,7 @@ body {
     --greyM: #373737;
     --greyD: #212121;
     --white: #ffffff;
+    --black: #000000;
 }
 
 .greenL {color: var(--greenL);}
@@ -49,6 +50,7 @@ body {
 .greyM {color: var(--greyM);}
 .greyD {color: var(--greyD);}
 .white {color: var(--white);}
+.black {color: var(--black);}
 
 #nav {
     flex-direction: row;
@@ -295,6 +297,44 @@ p, a {
     margin-top: 5dvw;
     width: 600px;
     height: 800px;
+    display: flex;
+    flex-direction: column;
+}
+.resHead {
+    margin: 0px;
+    background-color: var(--greenL);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.resH1 {
+    font-size: 2em;
+    margin: 0px;
+    margin-top: 1dvh;
+}
+.resH3 {
+    font-size: 1em;
+}
+.resMain {
+    display: flex;
+}
+.resSplit1 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+li {
+    color: var(--greenL);
+    font-size: 1em;
+}
+.resAbout {
+    font-size: 1em;
+}
+.resSplit2 {
+ width: 70%;
 }
 
 
@@ -336,6 +376,7 @@ p, a {
         flex-direction: column;
     }
     #awards, #hobbies, #plan {
+        height: -moz-fit-content;
         height: fit-content;
         align-items: center;
     }
