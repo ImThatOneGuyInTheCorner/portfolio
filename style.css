@@ -168,7 +168,7 @@ p, a {
 #welcome {
     width: -moz-fit-content;
     width: fit-content;
-    margin-right: 9vw;
+    /* margin-right: 9vw; */
 }
 
 
@@ -177,14 +177,17 @@ p, a {
     flex-wrap: wrap;
     height: 11vw;
     width: 70dvw;
+    justify-content: center;
 }
-#awards > .image, #hobbies > .image, #plan > .image {
+#hobbies > .image, #plan > .image {
     margin-left: 0px;
     margin-right: 0px;
 }
-#awards > figure, #hobbies > figure, #plan > figure {
-    height: 10dvw;
+#hobbies > img, #plan > img {
     width: 10dvw;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+
 }
 #awards > p, #hobbies > p, #plan > p {
     width: 50dvw;
@@ -193,6 +196,12 @@ p, a {
 .quote {
     padding-top: 5vh;
     padding-bottom: 5vh;
+}
+#awards {
+    width: 80vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -241,9 +250,11 @@ p, a {
     background-color: #373737;
     justify-content: center;
 }
-.window > figure {
-    width: 15dvw;
-    height: 15dvw;
+.window > img {
+    width: 12dvw;
+    margin: 2%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 .window > p {
     width: 40dvw;
@@ -286,3 +297,61 @@ p, a {
     height: 800px;
 }
 
+
+/* pixel */
+.slideCont {
+    height: 25dvw;
+    border-left-style: none;
+    border-right-style: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#imageSlideCont {
+    height: 80%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+#imageSlideCont > img {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+.sliderBtn {
+    margin: 1%;
+    padding: 2%;
+    cursor: pointer;
+}
+.c1, .c2, .c0 {
+    order: 1;
+}
+.c3 {
+    order: 0;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .flex {
+        flex-direction: column;
+    }
+    #awards, #hobbies, #plan {
+        height: fit-content;
+        align-items: center;
+    }
+    #hobbies > img, #plan > img {
+        width: 30dvw;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+    .window {
+        flex-direction: column;
+        align-items: center;
+    }
+    .window > img {
+        width: 35dvw;
+        margin: 2%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+  }
